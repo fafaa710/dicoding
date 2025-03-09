@@ -9,8 +9,8 @@ def load_data(file_path):
     data = pd.read_csv(file_path)
     return data
 
-file_path_day = r"..\dataset\Bike-sharing-dataset\day.csv"
-file_path_hour = r"..\dataset\Bike-sharing-dataset\hour.csv"
+file_path_day = r"https://github.com/fafaa710/dicoding/blob/main/submission/dashboard/day.csv"
+file_path_hour = r"https://github.com/fafaa710/dicoding/blob/main/submission/dashboard/hour.csv"
 
 data_day = load_data(file_path_day)
 data_hour = load_data(file_path_hour)
