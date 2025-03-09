@@ -4,19 +4,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import datetime
 
-#load data
-def load_data(file_path):
-    data = pd.read_csv(file_path)
-    return data
+url_day = "https://raw.githubusercontent.com/fafaa710/dicoding/main/submission/dashboard/day.csv"
+url_hour = "https://raw.githubusercontent.com/fafaa710/dicoding/main/submission/dashboard/hour.csv"
 
-file_path_day = r"https://media.githubusercontent.com/media/fafaa710/dicoding/main/submission/dashboard/day.csv"
-file_path_hour = r"https://media.githubusercontent.com/media/fafaa710/dicoding/main/submission/dashboard/hour.csv"
+# Load data langsung dari GitHub
+day_df = pd.read_csv(url_day)
+hour_df = pd.read_csv(url_hour)
 
-data_day = load_data(file_path_day)
-data_hour = load_data(file_path_hour)
-
-day_df = pd.read_csv(file_path_day)
-hour_df = pd.read_csv(file_path_hour)
+data_day = load_data(url_day)
+data_hour = load_data(url_day)
 
 st.write(
     """
