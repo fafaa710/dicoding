@@ -11,8 +11,6 @@ url_hour = "https://raw.githubusercontent.com/fafaa710/dicoding/main/submission/
 day_df = pd.read_csv(url_day)
 hour_df = pd.read_csv(url_hour)
 
-data_day = load_data(url_day)
-data_hour = load_data(url_day)
 
 st.write(
     """
@@ -38,17 +36,17 @@ col1, col2, col3 = st.columns(3)
 
 # Menampilkan total peminjaman
 with col1:
-    total_peminjaman = data_day['cnt'].sum()
+    total_peminjaman = day_df['cnt'].sum()
     st.metric("Total Peminjaman Sepeda", value=total_peminjaman)
 
 # Menampilkan total registered
 with col2:
-    total_registered = data_day['registered'].sum()
+    total_registered = day_df['registered'].sum()
     st.metric("Total Registered", value=total_registered)
 
 # Menampilkan total casual
 with col3:
-    total_casual = data_day['casual'].sum()
+    total_casual = day_dfdata_day['casual'].sum()
     st.metric("Total Casual", value=total_casual)
 
 
