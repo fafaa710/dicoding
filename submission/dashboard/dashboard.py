@@ -46,7 +46,7 @@ with col2:
 
 # Menampilkan total casual
 with col3:
-    total_casual = day_dfdata_day['casual'].sum()
+    total_casual = day_df['casual'].sum()
     st.metric("Total Casual", value=total_casual)
 
 
