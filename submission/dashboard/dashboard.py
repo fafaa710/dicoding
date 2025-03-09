@@ -9,7 +9,7 @@ def load_data(file_path):
     data = pd.read_csv(file_path)
     return data
 
-file_path_day = r"/day.csv"
+file_path_day = r"https://media.githubusercontent.com/media/"
 file_path_hour = r"/hour.csv"
 
 data_day = load_data(file_path_day)
