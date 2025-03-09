@@ -80,7 +80,7 @@ st.pyplot(fig)
 
 # 2️⃣ Pie Chart: Peminjaman Sepeda per Musim
 st.subheader("🌦️ Peminjaman Sepeda per Musim")
-peminjaman_per_musim = data_day.groupby("season")["cnt"].sum()
+peminjaman_per_musim = day_df.groupby("season")["cnt"].sum()
 fig, ax = plt.subplots()
 season_mapping = {1: "Spring", 2: "Summer", 3: "Fall", 4: "Winter"}
 ax.pie(peminjaman_per_musim, labels=[season_mapping[s] for s in peminjaman_per_musim.index], 
